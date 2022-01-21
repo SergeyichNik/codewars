@@ -1,1 +1,1 @@
-const codewars = 'Здесь пока ничего'
+const freeCodeCamp = 'здесь пока ничего';
