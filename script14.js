@@ -1,7 +1,7 @@
 function SubtractSum(n){
     return 'apple';
 }
-}
+
 
 console.log(SubtractSum(325));
 
