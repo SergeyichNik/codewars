@@ -21,3 +21,7 @@ const areaOrPerimeter = function(l , w) {
 function isDivisible(n, x, y) {
     return n % x == 0 && n % y == 0 ? true : false;
   }
+
+function makeNegative(num) {
+return num >= 0 ? num * -1 : num;
+}  
