@@ -17,3 +17,7 @@ console.log(getAverage(arr));
 const areaOrPerimeter = function(l , w) {
     return l == w ? l * w : (l + w) * 2;
 };
+
+function isDivisible(n, x, y) {
+    return n % x == 0 && n % y == 0 ? true : false;
+  }
