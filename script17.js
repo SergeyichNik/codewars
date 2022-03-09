@@ -3,3 +3,9 @@ function symmetricPoint(p, q) {
 }
 
 console.log(symmetricPoint([0,0], [1,1]));
+
+function oddCount(n){
+   return Math.floor(n / 2)
+}
+
+console.log(oddCount(7))
