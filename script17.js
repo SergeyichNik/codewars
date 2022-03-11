@@ -10,10 +10,17 @@
 
 // console.log(oddCount(7))
 
-function usdcny(usd) {
-    return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+// function usdcny(usd) {
+//     return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+// }
+
+
+
+// console.log(usdcny(8008))
+
+
+function pillars(num_pill, dist, width) {
+    num_pill === 1 ? 0 : ((dist * 100) * (num_pill - 1)) + (width * (num_pill - 2))  
 }
 
-
-
-console.log(usdcny(8008))
+console.log(pillars(11, 15, 30))
