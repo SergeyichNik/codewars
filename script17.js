@@ -91,26 +91,41 @@
 
 //b:2, i:9, n:14, g:7, o:15
 
-function bingo(a) {
-	let b = 0;
-	let i = 0;
-	let n = 0;
-	let g = 0; 
-	let o = 0;
-	let res;
-	for (let x = 0; x < a.length; x++) {
-		if (a[x] === 2 ) b += 1 
-		if (a[x] === 9) i += 1 
-		if (a[x] === 14) n += 1 
-		if (a[x] === 7) g += 1  
-		if(a[x] === 15) o +=1
-	}
-	if (b > 0 && i > 0 && n > 0 && g > 0 && o > 0) {
-		res = 'WIN'
-	} else {
-		res = 'LOSE'
-	} 
-	return res;
-}
+// function bingo(a) {
+// 	let b = 0;
+// 	let i = 0;
+// 	let n = 0;
+// 	let g = 0; 
+// 	let o = 0;
+// 	let res;
+// 	for (let x = 0; x < a.length; x++) {
+// 		if (a[x] === 2 ) b += 1 
+// 		if (a[x] === 9) i += 1 
+// 		if (a[x] === 14) n += 1 
+// 		if (a[x] === 7) g += 1  
+// 		if(a[x] === 15) o +=1
+// 	}
+// 	if (b > 0 && i > 0 && n > 0 && g > 0 && o > 0) {
+// 		res = 'WIN'
+// 	} else {
+// 		res = 'LOSE'
+// 	} 
+// 	return res;
+// }
 
- console.log(bingo([21,13,2,7,5,14,7,15,9,10]))
+//  console.log(bingo([21,13,2,7,5,14,7,15,9,10]))
+
+function zeroAndOne(s) {
+	let match = 0
+	for (let i = 0; i < s.length; i++) {
+		if((s[i] + s[i + 1]) === '10' || s[i] + s[i + 1] === '01'){
+			match += 1
+			i++
+		}
+	}
+	return s.length - match * 2;
+  }
+
+let a = '01010'
+
+  console.log(zeroAndOne(a))
